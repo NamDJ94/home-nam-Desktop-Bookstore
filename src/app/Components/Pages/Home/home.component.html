@@ -1,0 +1,11 @@
+<div class="row">
+    <div *ngFor = "let book of arrBook" class="col-lg-3" style="border: solid 1px black">
+        <div class="card-body">
+          <!--WelcomeFrom-->
+            <a routerLink="/{{book.name}}">
+                <img src="assets/bg1.jpg" class="d-block w-100" alt="...">
+                {{book.name}}
+            </a>
+          <!--//WelcomeFrom-->
+        </div>
+  </div>
